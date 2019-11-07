@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style = "font-family:geneva,georgia,serif;text-align:center;"><font color="black">Story Time</font> </h1>
+<p>
+<img src="chicken.jpg" alt=chicken_crossing_road width="500" height="350">
+<style>
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+</style>
+<p style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;text-align:center;">
+         <font color="black">Time to MadLib. </font>
+<button onclick="madlibs()"> Click here to begin MadLibbing </button>
+</p>
+<script>
+function madlibs() {
+var adjective = prompt('Type in an adjective')
+
+var noun = prompt("Type in a noun");
+
+var verb = prompt("Type in a verb (present tense)");
+
+alert("Creating your MadLib....")
+
+var sentence = "On one fine day, a(n) " + adjective +" chicken wanted to cross a road. All of a sudden a(n) " + noun +" stopped the chicken in the middle of the road."
+sentence += " The " + noun +" began to " + verb +" until it got run over by a car." 
+document.write(sentence);
+setTimeout(function(){alert("Refreshing the page now...")}, 7000);
+setTimeout(function refreshPage(){window.location.reload()},8000);
+}
+</script>
+<p>
+<h3 style = "font-family:geneva,georgia,serif;text-align:left;"><font color="black">Other fun things to do:</font> </h3>
+<ul>
+	<font color="black"> <li> <a href =https://www.youtube.com/ target="_blank" name = "Test">YouTube</a> </font> </li>
+	<font color="black"> <li> <a href =index.html name = "numbers">Random Number Guesser of Awesomeness</a> </font> </li>
+	<font color="black"> <li> <a href =homepage.html name = "Home">Home</a> </font> </li>
+</ul>
+      </p>
+</body>
+</html>
+

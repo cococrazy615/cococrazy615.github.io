@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: black;">
+<img src="numbers.gif" alt=numbers width="500" height="350">
+<style>
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+</style>
+
+
+
+<h1 style = "font-family:geneva,georgia,serif;text-align:center;"><font color="white">Random Number Guesser of Awesomeness</font> </h1>
+
+<p style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;text-align:center;">
+         <font color="white">This is a game. Play if you want to. </font>
+
+<button onclick="game()"> press this button to play</button>
+ </p>
+<script>
+function game() {
+var randomNumber = Math.floor(Math.random()*10);
+var userNumber = prompt("Please enter a number. (1-10)")
+if (randomNumber.toString() === userNumber) {
+    alert('Congratulations! You win!')
+} else {
+    alert('Aww. Better luck next time.' + " The correct number was " + randomNumber + '.')
+}
+}
+</script>
+<style>
+ul {
+list-style: none;
+}
+
+ul li::before {
+	content: "\2022";
+	color: white;
+	font-weight: bold;
+	display: inline-block;
+	width: 1em
+	margin-left: -1em
+}
+</style>
+<p>
+<h3 style = "font-family:geneva,georgia,serif;text-align:left;"><font color="white">Other fun things to do:</font> </h3>
+<ul>
+	<font color="white"> <li> <a href =https://www.youtube.com/ target="_blank" name = "Test">YouTube</a> </font> </li>
+	<font color="white"> <li> <a href =madlibs.html name = "madlibs">Aaron's MadLibs</a> </font> </li>
+	<font color="white"> <li> <a href =homepage.html name ="home">Home</a> </font> </li>
+</ul>
+      </p>
+
+</body>
+</html>
